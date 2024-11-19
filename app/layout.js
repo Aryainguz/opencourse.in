@@ -3,25 +3,27 @@ import { Outfit } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 const inter = Outfit({ subsets: ["latin"] });
+
 export const metadata = {
-  title: "OpenCourse | Create Your Customized Learning Path",
-  description: "Easily generate tailored AI courses with our OpenCourse tool. Customize your curriculum, explore various topics, and enhance your learning experience.",
-  keywords: "AI courses, course generator, custom learning, artificial intelligence, online learning, educational tool",
-  author: "Pankaj Kumar Pandey", // Your name or organization
+  title: "OpenCourse | Free Open and Personalized Learning",
+  description: "Unlock quality education with OpenCourse. Generate personalized AI-driven courses and customize your learning journey, all in one platform.",
+  keywords: "Open learning, personalized courses, AI education, open access, custom learning paths, online education, Next.js, React.js",
+  author: "Aryan Inguz",
   openGraph: {
-    title: "OpenCourse",
-    description: "Transform your learning experience with our OpenCourse. Create personalized courses tailored to your needs.",
-    url: "", // Replace with your actual URL
-    image: "/images/og-image.png", // Path to an Open Graph image
+    title: "OpenCourse | Open and Personalized Learning",
+    description: "Join OpenCourse and revolutionize your education. AI-powered tools for personalized learning experiences.",
+    url: "https://opencourse.in", 
+    image: "/images/opencourse-og-image.png",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenCourse",
-    description: "Generate custom AI courses effortlessly. Start your learning journey today!",
-    image: "/images/twitter-image.png", // Path to a Twitter image
+    title: "OpenCourse | Personalized AI-Driven Learning",
+    description: "Explore OpenCourse and create your tailored learning path with ease.",
+    image: "/images/opencourse-twitter-image.png",
   },
 };
+
 
 
 export default function RootLayout({ children }) {
