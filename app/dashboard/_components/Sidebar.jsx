@@ -12,6 +12,7 @@ import { HiOutlineHome, HiOutlineShieldCheck } from "react-icons/hi";
 import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { adminConfig } from "../../../configs/AdminConfig";
 import { UserCourseListContext } from "../../_context/UserCourseListContext";
+import logo from "../../../assets/logosaas.jpg"
 
 const Sidebar = () => {
   const { user } = useUser();
@@ -83,7 +84,10 @@ const Sidebar = () => {
   const needsUpgrade = !isAdmin && courseCount >= maxCourses;
   return (
     <div className="fixed h-full md:w-64 p-4 shadow-md">
-      <Image src={"/logo.png"} width={44} height={44} />
+      <Link href="/">
+         <Image src={logo} alt="logo" width={55} height={55} 
+                  />
+                  </Link>
       <hr className="my-3" />
       <ul>
         {menu.map((item) => (

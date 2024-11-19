@@ -1,9 +1,10 @@
+import Link from "next/link"
 
 export const Hero = () => {
   return (
-<div className="bg-white p-4 sm:p-0">
+<div className="bg-white px-4 sm:p-0">
 
-  <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+  <section className="bg-opacity-30 py-10 sm:py-16 lg:py-10">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
         <div>
@@ -19,17 +20,17 @@ export const Hero = () => {
 
 <div className="relative inline-flex mt-6 group">
   <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt" />
-  <a href="#"  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+  <Link href={'/dashboard'}  className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
     Get access to 4,958 resources
-  </a>
+  </Link>
 </div>
 
 
           <p className="mt-5 text-gray-600">
             Already joined us?{' '}
-            <a href="#" title="" className="text-black transition-all duration-200 hover:underline">
+            <Link href={'/sign-in'} className="text-black transition-all duration-200 hover:underline">
               Log in
-            </a>
+            </Link>
           </p>
         </div>
 
