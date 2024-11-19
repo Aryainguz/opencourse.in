@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiOutlineClock } from 'react-icons/hi2'
 
 const ChapterListCard = ({chapter,index}) => {

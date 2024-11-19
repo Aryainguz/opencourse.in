@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
-import Header from "./_components/Header";
 import { UserCourseListContext } from "../_context/UserCourseListContext";
+import Header from "./_components/Header";
 import Sidebar from "./_components/Sidebar";
 
 const dashboardLayout = ({ children }) => {

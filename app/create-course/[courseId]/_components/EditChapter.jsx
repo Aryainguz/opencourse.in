@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import { Button } from "../../../../components/ui/button";
 import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-  } from "@/components/ui/dialog";
-  import { HiPencilSquare } from "react-icons/hi2";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../../../../components/ui/dialog";
+import { Input } from "../../../../components/ui/input";
+import { Textarea } from "../../../../components/ui/textarea";
+import { db } from "../../../../configs/db";
+import { CourseList } from "../../../../configs/Schema";
 import { DialogClose } from "@radix-ui/react-dialog";
-import { Button } from "@/components/ui/button";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
 import { eq } from "drizzle-orm";
+import { useEffect, useState } from 'react';
+import { HiPencilSquare } from "react-icons/hi2";
 const EditChapter = ({course, index, refreshData}) => {
 
     const[name, setName] = useState();

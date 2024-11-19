@@ -1,9 +1,9 @@
 "use client"
-import { UserCourseListContext } from '@/app/_context/UserCourseListContext';
-import { Button } from '@/components/ui/button';
-import { useUser } from '@clerk/nextjs'
+import { useUser } from '@clerk/nextjs';
 import Link from 'next/link';
-import React, { useContext } from 'react'
+import { useContext } from 'react';
+import { Button } from '../../../components/ui/button';
+import { UserCourseListContext } from '../../_context/UserCourseListContext';
 
 const Addcourse = () => {
     const {user} =  useUser();

@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
+import { UserInputContext } from "../../_context/UserInputContext";
+import { Input } from "../../../components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Input } from "@/components/ui/input";
-import { UserInputContext } from "@/app/_context/UserInputContext";
+} from "../../../components/ui/select";
+import { useContext } from "react";
 
 const SelectOption = () => {
   const { userCourseInput, setUserCourseInput } = useContext(UserInputContext);

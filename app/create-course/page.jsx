@@ -1,22 +1,20 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
-import { HiMiniSquares2X2 } from "react-icons/hi2";
-import { HiLightBulb } from "react-icons/hi";
-import { HiClipboardDocumentCheck } from "react-icons/hi2";
-import { Button } from "@/components/ui/button";
-import SelectCategory from "./_components/SelectCategory";
-import TopicDesc from "./_components/TopicDescription";
-import TopicDescription from "./_components/TopicDescription";
-import SelectOption from "./_components/SelectOption";
-import { UserInputContext } from "../_context/UserInputContext";
-import { GenerateCourseLayoutAI } from "@/configs/AiModel";
-import Loading from "./_components/Loading";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
-import uuid4 from "uuid4";
+import { Button } from "../../components/ui/button";
+import { adminConfig } from "../../configs/AdminConfig";
+import { GenerateCourseLayoutAI } from "../../configs/AiModel";
+import { db } from "../../configs/db";
+import { CourseList } from "../../configs/Schema";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { adminConfig } from "@/configs/AdminConfig";
+import { useContext, useEffect, useState } from "react";
+import { HiLightBulb } from "react-icons/hi";
+import { HiClipboardDocumentCheck, HiMiniSquares2X2 } from "react-icons/hi2";
+import uuid4 from "uuid4";
+import { UserInputContext } from "../_context/UserInputContext";
+import Loading from "./_components/Loading";
+import SelectCategory from "./_components/SelectCategory";
+import SelectOption from "./_components/SelectOption";
+import TopicDescription from "./_components/TopicDescription";
 
 const CreateCourse = () => {
   const StepperOptions = [

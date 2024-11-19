@@ -1,7 +1,7 @@
-import { UserInputContext } from "@/app/_context/UserInputContext";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import React, { useContext } from "react";
+import { UserInputContext } from "../../_context/UserInputContext";
+import { Input } from "../../../components/ui/input";
+import { Textarea } from "../../../components/ui/textarea";
+import { useContext } from "react";
 
 const TopicDescription = () => {
   const { userCourseInput, setUserCourseInput } = useContext(UserInputContext);

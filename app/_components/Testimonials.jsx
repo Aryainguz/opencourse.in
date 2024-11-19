@@ -1,17 +1,16 @@
 "use client";
-import avatar1 from "@/assets/avatar-1.png";
-import avatar2 from "@/assets/avatar-2.png";
-import avatar3 from "@/assets/avatar-3.png";
-import avatar4 from "@/assets/avatar-4.png";
-import avatar5 from "@/assets/avatar-5.png";
-import avatar6 from "@/assets/avatar-6.png";
-import avatar7 from "@/assets/avatar-7.png";
-import avatar8 from "@/assets/avatar-8.png";
-import avatar9 from "@/assets/avatar-9.png";
-import Image from "next/image";
-import React, { use } from "react";
-import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import React from "react";
+import avatar1 from "../../assets/avatar-1.png";
+import avatar2 from "../../assets/avatar-2.png";
+import avatar3 from "../../assets/avatar-3.png";
+import avatar4 from "../../assets/avatar-4.png";
+import avatar5 from "../../assets/avatar-5.png";
+import avatar6 from "../../assets/avatar-6.png";
+import avatar7 from "../../assets/avatar-7.png";
+import avatar8 from "../../assets/avatar-8.png";
+import avatar9 from "../../assets/avatar-9.png";
 
 const testimonials = [
   {

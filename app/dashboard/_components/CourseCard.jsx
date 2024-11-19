@@ -1,12 +1,11 @@
-import Image from "next/image";
-import React from "react";
-import { HiMiniEllipsisVertical, HiOutlineBookOpen } from "react-icons/hi2";
-import DropdownOption from "./DropdownOption";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
 import { eq } from "drizzle-orm";
+import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineShare } from "react-icons/hi";
+import { HiMiniEllipsisVertical, HiOutlineBookOpen } from "react-icons/hi2";
+import { db } from "../../../configs/db";
+import { CourseList } from "../../../configs/Schema";
+import DropdownOption from "./DropdownOption";
 
 const CourseCard = ({ course, refreshData, displayUser = false }) => {
   const handleOnDelete = async () => {

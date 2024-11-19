@@ -1,17 +1,16 @@
 "use client";
 
-import Header from "@/app/_components/Header";
-import ChapterList from "@/app/create-course/[courseId]/_components/ChapterList";
-import CourseBasicInfo from "@/app/create-course/[courseId]/_components/CourseBasicInfo";
-import CourseDetail from "@/app/create-course/[courseId]/_components/CourseDetail";
+import Header from "../../_components/Header";
+import ChapterList from "../../create-course/[courseId]/_components/ChapterList";
+import CourseBasicInfo from "../../create-course/[courseId]/_components/CourseBasicInfo";
+import CourseDetail from "../../create-course/[courseId]/_components/CourseDetail";
 
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
 import { eq } from "drizzle-orm";
-import { Corben } from "next/font/google";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HiOutlineShare } from "react-icons/hi";
 import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
+import { db } from "../../../configs/db";
+import { CourseList } from "../../../configs/Schema";
 
 const Course = ({ params }) => {
   const [course, setCourse] = useState([]);

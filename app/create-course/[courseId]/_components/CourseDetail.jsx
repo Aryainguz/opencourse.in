@@ -1,5 +1,4 @@
-import React from "react";
-import { HiOutlineChartBar, HiOutlineClock , HiOutlineBookOpen, HiOutlinePlay} from "react-icons/hi";
+import { HiOutlineBookOpen, HiOutlineChartBar, HiOutlineClock, HiOutlinePlay } from "react-icons/hi";
 
 const CourseDetail = ({ course }) => {
   return (

@@ -1,11 +1,11 @@
-import { CallToAction } from "@/app/_components/CallToAction";
-import { Footer } from "@/app/_components/Footer";
-import Hero from "@/app/_components/Hero";
-import { LogoTicker } from "@/app/_components/LogoTicker";
-import Navbar from "@/app/_components/Navbar";
-import { Pricing } from "@/app/_components/Pricing";
-import { ProductShowcase } from "@/app/_components/ProductShowcase";
-import { Testimonials } from "@/app/_components/Testimonials";
+import { CallToAction } from "./_components/CallToAction";
+import { Footer } from "./_components/Footer";
+import { Hero } from "./_components/Hero";
+import { LogoTicker } from "./_components/LogoTicker";
+import Navbar from "./_components/Navbar";
+import { Pricing } from "./_components/Pricing";
+import { ProductShowcase } from "./_components/ProductShowcase";
+import { Testimonials } from "./_components/Testimonials";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <ProductShowcase />
       <Pricing />
       <Testimonials />
-      <CallToAction />
+      <CallToAction/>
       <Footer />
       </>
   );

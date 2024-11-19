@@ -1,4 +1,3 @@
-import React from "react";
 import { HiOutlineCheckCircle, HiOutlineClock } from "react-icons/hi";
 import EditChapter from "./EditChapter";
 

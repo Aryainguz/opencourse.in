@@ -1,8 +1,8 @@
 "use client"
 // pages/dashboard/logout.jsx
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { useClerk } from '@clerk/nextjs';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const Logout = () => {
   const { signOut } = useClerk();

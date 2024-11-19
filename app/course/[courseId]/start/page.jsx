@@ -1,12 +1,12 @@
 "use client";
-import { db } from "@/configs/db";
-import { Chapters, CourseList } from "@/configs/Schema";
 import { and, eq } from "drizzle-orm";
-import React, { useEffect, useState } from "react";
-import ChapterListCard from "./_components/ChapterListCard";
+import { useEffect, useState } from "react";
+import { Chapters, CourseList } from "../../../../configs/Schema";
 import ChapterContent from "./_components/ChapterContent";
+import ChapterListCard from "./_components/ChapterListCard";
 
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { db } from "../../../../configs/db";
 
 const CourseStart = ({ params }) => {
   const [course, setCourse] = useState([]);

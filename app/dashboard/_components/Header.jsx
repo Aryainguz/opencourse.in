@@ -1,9 +1,7 @@
-import { adminConfig } from "@/configs/AdminConfig";
 import { useClerk, UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import React from "react";
 import { CiPower } from "react-icons/ci";
 import {
   HiOutlineHome,
@@ -14,10 +12,9 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger
+} from "../../../components/ui/dropdown-menu";
+import { adminConfig } from "../../../configs/AdminConfig";
 
 const Header = () => {
   const { user } = useUser();

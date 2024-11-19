@@ -1,19 +1,18 @@
 "use client";
-import { db } from "@/configs/db";
-import { Chapters, CourseList } from "@/configs/Schema";
+import { Button } from "../../../components/ui/button";
+import { GenerateChapterContent_AI } from "../../../configs/AiModel";
+import { db } from "../../../configs/db";
+import { Chapters, CourseList } from "../../../configs/Schema";
+import service from "../../../configs/service";
 import { useUser } from "@clerk/nextjs";
 import { and, eq } from "drizzle-orm";
-import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import Loading from "../_components/Loading";
+import ChapterList from "./_components/ChapterList";
 import CourseBasicInfo from "./_components/CourseBasicInfo";
 import CourseDetail from "./_components/CourseDetail";
-import ChapterList from "./_components/ChapterList";
-import toast, { Toaster } from "react-hot-toast";
-import { Button } from "@/components/ui/button";
-import { GenerateChapterContent_AI } from "@/configs/AiModel";
-import { Fascinate } from "next/font/google";
-import Loading from "../_components/Loading";
-import service from "@/configs/service";
-import { useRouter } from "next/navigation";
 
 const courseLayout = ({ params }) => {
   const { user } = useUser();

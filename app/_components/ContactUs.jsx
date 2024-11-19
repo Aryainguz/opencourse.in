@@ -1,12 +1,12 @@
 "use client"
 import Head from 'next/head'
 import React, { useState } from 'react'
-import Header from './Header'
 import Footer from './Footer'
+import Header from './Header'
 
 
-import toast from 'react-hot-toast'
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

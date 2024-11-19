@@ -1,15 +1,15 @@
 "use client";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
+import { Button } from "../../../../components/ui/button";
+import { db } from "../../../../configs/db";
+import { CourseList } from "../../../../configs/Schema";
 import { useUser } from "@clerk/nextjs";
 import { and, eq } from "drizzle-orm";
-import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import CourseBasicInfo from "../_components/CourseBasicInfo";
-import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
-import { HiOutlineShare } from "react-icons/hi";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { HiOutlineShare } from "react-icons/hi";
+import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
+import CourseBasicInfo from "../_components/CourseBasicInfo";
 
 const FinishScreen = ({ params }) => {
   const { user } = useUser();

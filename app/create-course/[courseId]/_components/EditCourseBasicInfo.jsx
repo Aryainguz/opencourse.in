@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { eq } from "drizzle-orm";
+import { useEffect, useState } from "react";
+import { HiPencilSquare } from "react-icons/hi2";
+import { Button } from "../../../../components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -7,15 +11,11 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
-import { HiPencilSquare } from "react-icons/hi2";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { DialogClose } from "@radix-ui/react-dialog";
-import { Button } from "@/components/ui/button";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
-import { eq } from "drizzle-orm";
+} from "../../../../components/ui/dialog";
+import { Input } from "../../../../components/ui/input";
+import { Textarea } from "../../../../components/ui/textarea";
+import { db } from "../../../../configs/db";
+import { CourseList } from "../../../../configs/Schema";
 
 const EditCourseBasicInfo = ({course, refreshData}) => {
   const [name, setName] =  useState();

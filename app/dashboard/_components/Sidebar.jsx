@@ -1,18 +1,17 @@
 "use client";
 
-import React, { useContext } from "react";
-import { Progress } from "@/components/ui/progress";
+import { useContext } from "react";
+import { Progress } from "../../../components/ui/progress";
 
-import { HiOutlineHome } from "react-icons/hi";
-import { CiPower } from "react-icons/ci";
-import { HiOutlineShieldCheck } from "react-icons/hi";
-import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
-import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
-import { UserCourseListContext } from "@/app/_context/UserCourseListContext";
-import Image from "next/image";
 import { useClerk, useUser } from "@clerk/nextjs";
-import { adminConfig } from "@/configs/AdminConfig";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { CiPower } from "react-icons/ci";
+import { HiOutlineHome, HiOutlineShieldCheck } from "react-icons/hi";
+import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
+import { adminConfig } from "../../../configs/AdminConfig";
+import { UserCourseListContext } from "../../_context/UserCourseListContext";
 
 const Sidebar = () => {
   const { user } = useUser();

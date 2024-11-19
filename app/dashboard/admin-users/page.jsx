@@ -1,12 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { adminConfig } from "@/configs/AdminConfig";
-import { useUser } from "@clerk/nextjs";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { toast } from "react-hot-toast";
-import React, { useEffect, useState } from "react";
+import { Button } from "../../../components/ui/button";
 import {
   Table,
   TableBody,
@@ -15,7 +8,13 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from "../../../components/ui/table";
+import { adminConfig } from "../../../configs/AdminConfig";
+import { useUser } from "@clerk/nextjs";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 
 const AdminUsers = () => {
   const { user } = useUser();

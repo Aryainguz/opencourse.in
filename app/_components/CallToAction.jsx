@@ -1,9 +1,9 @@
 "use client";
-import springImage from "@/assets/spring.png";
-import starImage from "@/assets/star.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRightCircle } from "lucide-react";
 import { useRef } from "react";
+import springImage from "../../assets/spring.png";
+import starImage from "../../assets/star.png";
 
 export const CallToAction = () => {
   const sectionRef = useRef(null);

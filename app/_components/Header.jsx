@@ -1,10 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { RxGithubLogo } from "react-icons/rx";
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { RxGithubLogo } from "react-icons/rx";
+import { Button } from "../../components/ui/button";
 
 const Header = () => {
   return (

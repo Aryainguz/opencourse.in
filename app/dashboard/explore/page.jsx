@@ -1,10 +1,9 @@
 "use client";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
-import React, { useEffect, useState } from "react";
+import { Button } from "../../../components/ui/button";
+import { db } from "../../../configs/db";
+import { CourseList } from "../../../configs/Schema";
+import { useEffect, useState } from "react";
 import CourseCard from "../_components/CourseCard";
-import { Button } from "@/components/ui/button";
-import { index } from "drizzle-orm/mysql-core";
 
 const Explore = () => {
   const [courseList, setCourseList] = useState([]);

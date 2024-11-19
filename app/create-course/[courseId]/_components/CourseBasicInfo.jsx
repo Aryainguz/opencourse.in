@@ -1,17 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../components/ui/button";
+import { db } from "../../../../configs/db";
+import { storage } from "../../../../configs/firebaseConfig";
+import { CourseList } from "../../../../configs/Schema";
+import { eq } from "drizzle-orm";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { toast } from 'react-hot-toast';
 import { HiOutlinePuzzlePiece } from "react-icons/hi2";
 import EditCourseBasicInfo from "./EditCourseBasicInfo";
-import { Corben } from "next/font/google";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { date } from "drizzle-orm/mysql-core";
-import { storage } from "@/configs/firebaseConfig";
-import { db } from "@/configs/db";
-import { CourseList } from "@/configs/Schema";
-import { eq } from "drizzle-orm";
-import {toast} from 'react-hot-toast';
-import Link from "next/link";
 
 const CourseBasicInfo = ({ course, refreshData,edit=true }) => {
   const [selectedFile, setSelectedFile] = useState();

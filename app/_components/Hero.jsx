@@ -1,7 +1,5 @@
-import { BookOpen } from 'lucide-react'
-import React from 'react'
 
-const Hero = () => {
+export const Hero = () => {
   return (
 <div className="bg-white p-4 sm:p-0">
 
@@ -50,5 +48,3 @@ const Hero = () => {
 
   )
 }
-
-export default Hero

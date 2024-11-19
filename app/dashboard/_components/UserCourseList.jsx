@@ -1,11 +1,11 @@
 "use client"
-import { db } from '@/configs/db'
-import { CourseList } from '@/configs/Schema'
 import { useUser } from '@clerk/nextjs'
 import { eq } from 'drizzle-orm'
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import { db } from '../../../configs/db'
+import { CourseList } from '../../../configs/Schema'
+import { UserCourseListContext } from '../../_context/UserCourseListContext'
 import CourseCard from './CourseCard'
-import { UserCourseListContext } from '@/app/_context/UserCourseListContext'
 
 const UserCourseList = () => {
   const [courseList,setCourseList] =  useState([]);

@@ -1,7 +1,7 @@
-import { UserInputContext } from "@/app/_context/UserInputContext";
-import CategoryList from "@/app/_shared/CategoryList";
+import { UserInputContext } from "../../../app/_context/UserInputContext";
+import CategoryList from "../../_shared/CategoryList";
 import Image from "next/image";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 const SelectCategory = () => {
   const { userCourseInput, setUserCourseInput } = useContext(UserInputContext);

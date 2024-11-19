@@ -1,12 +1,12 @@
 "use client";
-import acmeLogo from "@/assets/logo-acme.png";
-import quantamLogo from "@/assets/logo-quantum.png";
-import echoLogo from "@/assets/logo-echo.png";
-import celestialLogo from "@/assets/logo-celestial.png";
-import pulseLogo from "@/assets/logo-pulse.png";
-import apexLogo from "@/assets/logo-apex.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import acmeLogo from "../../assets/logo-acme.png";
+import apexLogo from "../../assets/logo-apex.png";
+import celestialLogo from "../../assets/logo-celestial.png";
+import echoLogo from "../../assets/logo-echo.png";
+import pulseLogo from "../../assets/logo-pulse.png";
+import quantamLogo from "../../assets/logo-quantum.png";
 
 export const LogoTicker = () => {
   return (
