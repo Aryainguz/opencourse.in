@@ -13,14 +13,14 @@ export const metadata = {
     title: "OpenCourse | Open and Personalized Learning",
     description: "Join OpenCourse and revolutionize your education. AI-powered tools for personalized learning experiences.",
     url: "https://opencourse.in", 
-    image: "/images/opencourse-og-image.png",
+    image: "/assets/opencourse-cover.jpg",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "OpenCourse | Personalized AI-Driven Learning",
     description: "Explore OpenCourse and create your tailored learning path with ease.",
-    image: "/images/opencourse-twitter-image.png",
+    image: "/assets/opencourse-cover.jpg",
   },
 };
 
