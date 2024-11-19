@@ -35,8 +35,8 @@ const ContactUs = () => {
     <>
     <Header/>
      <Head>
-        <title>Contact Us | AI Course Generator</title>
-        <meta name="description" content="Get in touch with AI Course Generator for any inquiries, feedback, or support." />
+        <title>Contact Us | OpenCourse</title>
+        <meta name="description" content="Get in touch with OpenCourse for any inquiries, feedback, or support." />
         <meta name="keywords" content="contact, customer support, AI courses" />
         <link rel="canonical" href="https://https://mrpankajpandey-ai-course.vercel.app/contact-us" />
       </Head>

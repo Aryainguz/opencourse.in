@@ -4,20 +4,20 @@ import Head from "next/head";
 import "./globals.css";
 const inter = Outfit({ subsets: ["latin"] });
 export const metadata = {
-  title: "AI Course Generator | Create Your Customized Learning Path",
-  description: "Easily generate tailored AI courses with our AI Course Generator tool. Customize your curriculum, explore various topics, and enhance your learning experience.",
+  title: "OpenCourse | Create Your Customized Learning Path",
+  description: "Easily generate tailored AI courses with our OpenCourse tool. Customize your curriculum, explore various topics, and enhance your learning experience.",
   keywords: "AI courses, course generator, custom learning, artificial intelligence, online learning, educational tool",
   author: "Pankaj Kumar Pandey", // Your name or organization
   openGraph: {
-    title: "AI Course Generator",
-    description: "Transform your learning experience with our AI Course Generator. Create personalized courses tailored to your needs.",
-    url: "https://mrpankajpandey-ai-course.vercel.app/", // Replace with your actual URL
+    title: "OpenCourse",
+    description: "Transform your learning experience with our OpenCourse. Create personalized courses tailored to your needs.",
+    url: "", // Replace with your actual URL
     image: "/images/og-image.png", // Path to an Open Graph image
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Course Generator",
+    title: "OpenCourse",
     description: "Generate custom AI courses effortlessly. Start your learning journey today!",
     image: "/images/twitter-image.png", // Path to a Twitter image
   },
