@@ -32,29 +32,25 @@ export default function RootLayout({ children }) {
     
     <ClerkProvider>
     <Head>
-          {/* SEO Metadata */}
           <title>{metadata.title}</title>
           <meta name="description" content={metadata.description} />
           <meta name="keywords" content={metadata.keywords} />
           <meta name="author" content={metadata.author} />
 
-          {/* Open Graph Meta Tags */}
           <meta property="og:title" content={metadata.openGraph.title} />
           <meta property="og:description" content={metadata.openGraph.description} />
           <meta property="og:url" content={metadata.openGraph.url} />
           <meta property="og:image" content={metadata.openGraph.image} />
           <meta property="og:type" content={metadata.openGraph.type} />
 
-          {/* Twitter Meta Tags */}
           <meta name="twitter:card" content={metadata.twitter.card} />
           <meta name="google-adsense-account" content="ca-pub-1034833348897670" />
           <meta name="twitter:title" content={metadata.twitter.title} />
           <meta name="twitter:description" content={metadata.twitter.description} />
           <meta name="twitter:image" content={metadata.twitter.image} />
 
-          {/* Google AdSense Script */}
           <script
-            data-ad-client={process.env.NEXT_PUBLIC_AD_CLIENT_ID} // Replace with your AdSense client ID
+            data-ad-client={process.env.NEXT_PUBLIC_AD_CLIENT_ID} 
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           ></script>
