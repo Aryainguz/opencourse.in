@@ -1,20 +1,22 @@
+import { Code, Heart, PaintBucket } from "lucide-react";
+
 export default [
     {
         id:1,
         name:'programming',
-        icon:'',
+        icon:<Code/>,
         prompt:''
     },
     {
         id:2,
         name:'Health',
-        icon:'',
+        icon:<Heart/>,
         promp:''
     },
     {
         id:3,
         name:'creative',
-        icon:'',
+        icon:<PaintBucket/>,
         promp:''
     },
 ]

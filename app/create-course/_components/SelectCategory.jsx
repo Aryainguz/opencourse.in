@@ -22,8 +22,9 @@ const SelectCategory = () => {
               "border-primary bg-blue-50"
             }`}
             onClick={() => handleCategoryChange(item.name)}
+            key={index}
           >
-            <Image rel={"category"} width={50} height={50} />
+            {item.icon}
             <h2>{item.name}</h2>
           </div>
         ))}
