@@ -14,8 +14,7 @@ export const Footer = () => {
           <a href="">Careers</a>
         </nav>
         <p className="mt-6">&copy; 2024 
-        Software By
-          <a href="https://www.thexitingway.com/" className="text-blue-500"> The Xiting Way. </a> All rights reserved.</p>
+       Made with ❤️ by team YACD for EY Techathon.</p>
       </div>
     </footer>
   );
