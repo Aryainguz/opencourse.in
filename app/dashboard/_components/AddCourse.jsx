@@ -10,7 +10,7 @@ const Addcourse = () => {
     const{userCourseList, setUserCourseList} = useContext(UserCourseListContext)
     
     console.log(userCourseList?.length);
-  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'mr.pankajpandey0038@gmail.com';
+  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'aryans12345678@gmail.com' || "gurpreetsehaj1005@gmail.com" || "pinak650.be22@chitkara.edu.in";
   const hasCourseLimit = userCourseList?.length >= 2;
   const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard/upgrade';
     
