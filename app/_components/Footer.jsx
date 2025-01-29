@@ -14,7 +14,7 @@ export const Footer = () => {
           <a href="">Careers</a>
         </nav>
         <p className="mt-6">&copy; 2024 
-       Made with ❤️ by team YACD for EY Techathon.</p>
+       Made with ❤️.</p>
       </div>
     </footer>
   );
