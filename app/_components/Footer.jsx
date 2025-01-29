@@ -13,8 +13,8 @@ export const Footer = () => {
           <a href="">Pricing</a>
           <a href="">Careers</a>
         </nav>
-        <p className="mt-6">&copy; 2024 
-       Made with ❤️.</p>
+        <p className="mt-6">&copy; 2025
+       Made with ❤️</p>
       </div>
     </footer>
   );
