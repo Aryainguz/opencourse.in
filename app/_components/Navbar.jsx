@@ -107,7 +107,7 @@ const Navbar = () => {
                   Pricing
                 </a>
                 <a
-                  href="#contribute"
+                  href="https://github.com/Aryainguz/opencourse.in"
                   className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                 >
                   Contribute
@@ -144,18 +144,11 @@ const Navbar = () => {
                     Pricing{" "}
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Aryainguz/opencourse.in"
                     className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
                   >
                     {" "}
-                    Automation{" "}
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded-xl hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                  >
-                    {" "}
-                    Customer Login{" "}
+                    Contribute{" "}
                   </a>
                   <Link href="/dashboard">
                       
@@ -193,19 +186,11 @@ const Navbar = () => {
                 Pricing
               </a>
               <a
-                href="#"
+                href="https://github.com/Aryainguz/opencourse.in"
                 className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 mb-8"
                 onClick={toggleMobileMenu}
               >
-                Automation
-              </a>
-              <a
-                href="#"
-                className="text-2xl font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 mb-8"
-                onClick={toggleMobileMenu}
-              >
-                {" "}
-                Customer Login{" "}
+                Contribute
               </a>
               <Link href="/dashboard">
                 <div
