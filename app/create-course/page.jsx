@@ -75,11 +75,13 @@ const CreateCourse = () => {
     return false;
   };
 
-  const isAdmin = adminConfig.emails.includes(user?.primaryEmailAddress?.emailAddress);
+  const isAdmin = adminConfig.emails.includes(
+    user?.primaryEmailAddress?.emailAddress
+  );
   const GenerateCourseLayout = async () => {
-    if(!isAdmin){
-      const numberOfChapter = userCourseInput?.noOfChapter; 
-      if(numberOfChapter>10){
+    if (!isAdmin) {
+      const numberOfChapter = userCourseInput?.noOfChapter;
+      if (numberOfChapter > 10) {
         alert("You cannot select more than 10 chapters.");
         return;
       }
@@ -144,7 +146,7 @@ const CreateCourse = () => {
         <h2 className="text-4xl text-primary font-medium">Create Course</h2>
         <div className="flex  mt-10">
           {StepperOptions.map((item, index) => (
-            <div className="flex items-center">
+            <div key={item.id} className="flex items-center">
               <div className="flex flex-col items-center w-[50px] md:w-[100px]">
                 <div
                   className={`bg-gray-300 p-3 rounded-full text-white ${

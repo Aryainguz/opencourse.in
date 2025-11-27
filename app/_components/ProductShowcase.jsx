@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import productImage from "../../assets/product-image.png";
+import productImage from "../../public/header.png";
 import pyramidImage from "../../assets/pyramid.png";
 import tubeImage from "../../assets/tube.png";
 
@@ -16,7 +16,10 @@ export const ProductShowcase = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
-    <section ref={sectionRef} className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip">
+    <section
+      ref={sectionRef}
+      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
+    >
       <div className="container">
         <div className="max-w-[540px] mx-auto">
           <div className="flex justify-center">
@@ -24,10 +27,11 @@ export const ProductShowcase = () => {
           </div>
 
           <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
-            A more effective way to learn for free. 
+            A more effective way to learn for free.
           </h2>
           <p className="section-des mt-5">
-          Best free resources organized and structured in way you spend more time learning and less time searching.
+            Best free resources organized and structured in way you spend more
+            time learning and less time searching.
           </p>
         </div>
 

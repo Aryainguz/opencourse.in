@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger
+  DropdownMenuTrigger,
 } from "../../../components/ui/dropdown-menu";
 import { adminConfig } from "../../../configs/AdminConfig";
 
@@ -25,7 +25,7 @@ const Header = () => {
     user?.primaryEmailAddress?.emailAddress
   );
   const handleLogout = async () => {
-    await signOut({ redirectTo: '/' }); // Redirect after logout
+    await signOut({ redirectTo: "/" }); // Redirect after logout
   };
   const menu = [
     {
@@ -68,44 +68,41 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center gap-2 p-5 shadow-sm">
       <div className="flex items-center gap-2">
-           <Link className="flex items-center gap-2 cursor-pointer" href={'/'}>
-        <span className="font-bold text-xl">Dashboard</span>
-           </Link>
-
+        <Link className="flex items-center gap-2 cursor-pointer" href={"/"}>
+          <span className="font-bold text-xl">Dashboard</span>
+        </Link>
       </div>
       <div className="md:hidden">
-            <DropdownMenu className=''>
-              <DropdownMenuTrigger className="p-4">Menu</DropdownMenuTrigger>
-              <DropdownMenuContent>
-        {menu.map((item) => (
-           item.isLogout ? (
-            <li
-            key={item.id}
-            className={`flex items-center gap-2 text-gray-600 cursor-pointer p-3 hover:bg-gray-100 hover:text-black rounded-lg mb-3`}
-            onClick={handleLogout}
-          >
-            <div>{item.icon}</div>
-            <h2>{item.name}</h2>
-          </li>
-        ) : (
-
-          <Link href={item.path}>
-                <DropdownMenuItem>
-                  <li
-                    key={item.id}
-                    className={`flex text-xs items-center gap-1 text-gray-600 cursor-pointer p-3 hover:bg-gray-100 hover:text-black rounded-lg mb-3 ${
-                      item.path == path && "bg-gray-100 text-black"
-                    }`}
-                  >
-                    <div>{item.icon}</div>
-                    <h2>{item.name}</h2>
-                  </li>
-                </DropdownMenuItem>
-          </Link>
-        )
-        ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <DropdownMenu className="">
+          <DropdownMenuTrigger className="p-4">Menu</DropdownMenuTrigger>
+          <DropdownMenuContent>
+            {menu.map((item) =>
+              item.isLogout ? (
+                <li
+                  key={item.id}
+                  className={`flex items-center gap-2 text-gray-600 cursor-pointer p-3 hover:bg-gray-100 hover:text-black rounded-lg mb-3`}
+                  onClick={handleLogout}
+                >
+                  <div>{item.icon}</div>
+                  <h2>{item.name}</h2>
+                </li>
+              ) : (
+                <Link key={item.id} href={item.path}>
+                  <DropdownMenuItem>
+                    <li
+                      className={`flex text-xs items-center gap-1 text-gray-600 cursor-pointer p-3 hover:bg-gray-100 hover:text-black rounded-lg mb-3 ${
+                        item.path == path && "bg-gray-100 text-black"
+                      }`}
+                    >
+                      <div>{item.icon}</div>
+                      <h2>{item.name}</h2>
+                    </li>
+                  </DropdownMenuItem>
+                </Link>
+              )
+            )}
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <UserButton />
     </div>
