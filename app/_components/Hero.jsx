@@ -12,7 +12,7 @@ export const Hero = () => {
           For Learners. By Learners.
           </p>
           <h1 className="mt-4 text-5xl font-bold text-black lg:mt-4 sm:text-6xl xl:text-8xl">
-          Learn Everything Pay Nothing.
+          Let AI make courses for you.
           </h1>
           <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
           Learning made open and free for everyone.
